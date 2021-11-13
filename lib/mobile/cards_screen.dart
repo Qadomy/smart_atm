@@ -52,7 +52,7 @@ class _CardsScreenState extends State<CardsScreen> {
                   const Text(
                     "Dashboard",
                     style: TextStyle(
-                        color: Color(0xFF4D70A6),
+                        color: Color(0xFFc2d0db),
                         fontSize: 26,
                         fontWeight: FontWeight.bold),
                   ),
@@ -105,7 +105,7 @@ class _CardsScreenState extends State<CardsScreen> {
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.normal,
-                        color: const Color(0xFF4D70A6).withOpacity(.7)),
+                        color: const Color(0xFFc2d0db).withOpacity(.7)),
                   ),
                   Row(
                     children: [
@@ -116,7 +116,7 @@ class _CardsScreenState extends State<CardsScreen> {
                         style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
-                            color: const Color(0xFF4D70A6).withOpacity(.7)),
+                            color: const Color(0xa4a20d5f).withOpacity(.7)),
                       ),
                     ],
                   ),

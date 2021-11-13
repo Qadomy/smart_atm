@@ -78,8 +78,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           ]),
                       child: const Text(
                         "Withdraw",
-                        style:
-                            TextStyle(color: Color(0xFF4D70A6), fontSize: 16),
+                        style: TextStyle(color: Colors.black, fontSize: 16),
                       ),
                     ),
                   ),
@@ -108,8 +107,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           ]),
                       child: const Text(
                         "Deposit",
-                        style:
-                            TextStyle(color: Color(0xFF4D70A6), fontSize: 16),
+                        style: TextStyle(color: Colors.black, fontSize: 16),
                       ),
                     ),
                   ),
