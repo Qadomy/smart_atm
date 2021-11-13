@@ -1,7 +1,11 @@
+import 'dart:async';
+
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:smart_atm/mobile/withdraw2_screen.dart';
 
 class ScanQrScreen extends StatefulWidget {
   const ScanQrScreen({Key? key}) : super(key: key);
@@ -38,6 +42,12 @@ class _ScanQrScreenState extends State<ScanQrScreen> {
         print(">>>>>>>>> before");
         await ref.child("qrcode").update({'qrcode': 1});
         print(">>>>>>>>> after");
+
+        Timer(Duration(seconds: 5), () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => Withdraw2Screen()));
+        });
+
         // print(">>>>>>>>> ${ref.update({'qrcode': 1}).toString()}");
       } catch (e) {
         print(">>>>>>>>> EEE $e");

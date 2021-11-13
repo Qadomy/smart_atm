@@ -37,7 +37,7 @@ class _WithdrawScreenState extends State<WithdrawScreen> {
                       children: <Widget>[
                         const SizedBox(height: 30),
                         const Text(
-                          "Account",
+                          "Withdraw",
                           style: TextStyle(
                               color: Color(0xffa20d5f),
                               fontSize: 26,
