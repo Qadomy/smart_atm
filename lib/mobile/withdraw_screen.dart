@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:smart_atm/mobile/scan_qr_screen.dart';
 
 class WithdrawScreen extends StatefulWidget {
   const WithdrawScreen({Key? key}) : super(key: key);
