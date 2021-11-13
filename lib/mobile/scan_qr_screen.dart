@@ -12,7 +12,10 @@ class ScanQrScreen extends StatefulWidget {
 
 class _ScanQrScreenState extends State<ScanQrScreen> {
   String qrCode = 'Unknown';
-  final ref = FirebaseDatabase.instance.reference();
+  final ref = FirebaseDatabase(
+          databaseURL:
+              "https://smartatm-36790-default-rtdb.asia-southeast1.firebasedatabase.app")
+      .reference();
 
   @override
   void initState() {
