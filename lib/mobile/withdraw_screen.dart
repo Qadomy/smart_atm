@@ -75,23 +75,23 @@ class _WithdrawScreenState extends State<WithdrawScreen> {
                                     color: Color(0xFF4D70A6), fontSize: 30))),
                         GestureDetector(
                           onTap: () async {
-                            // Navigator.of(context).push(MaterialPageRoute(
-                            //     builder: (context) => ScanQrScreen()));
-                            try {
-                              print("%%%%%%%% before");
-
-                              await ref.child("qrcode").onValue.listen((event) {
-                                setState(() {
-                                  print(">>>>> ${event.snapshot.value}");
-                                });
-                              });
-
-                              // await ref.set(1);
-                              print("%%%%%%%% done");
-                              // print("%%%%%%%% ${ref.set(1)}");
-                            } catch (e) {
-                              print("%%%%%%%% $e");
-                            }
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => ScanQrScreen()));
+                            // try {
+                            //   print("%%%%%%%% before");
+                            //
+                            //   await ref.child("qrcode").onValue.listen((event) {
+                            //     setState(() {
+                            //       print(">>>>> ${event.snapshot.value}");
+                            //     });
+                            //   });
+                            //
+                            //   // await ref.set(1);
+                            //   print("%%%%%%%% done");
+                            //   // print("%%%%%%%% ${ref.set(1)}");
+                            // } catch (e) {
+                            //   print("%%%%%%%% $e");
+                            // }
                           },
                           child: Container(
                             width: double.infinity,
