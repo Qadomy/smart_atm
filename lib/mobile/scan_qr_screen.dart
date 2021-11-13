@@ -37,6 +37,7 @@ class _ScanQrScreenState extends State<ScanQrScreen> {
       try {
         print(">>>>>>>>> before");
         await ref.child("qrcode").update({'qrcode': 1});
+        print(">>>>>>>>> after");
         // print(">>>>>>>>> ${ref.update({'qrcode': 1}).toString()}");
       } catch (e) {
         print(">>>>>>>>> EEE $e");

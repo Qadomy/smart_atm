@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
 
 class WebATMPage extends StatefulWidget {
   const WebATMPage({Key? key}) : super(key: key);
@@ -20,14 +19,15 @@ class _WebATMPageState extends State<WebATMPage> {
   final Future<FirebaseApp> _future = Firebase.initializeApp();
 
   final testQr = "testQr";
-  late int value;
+  late dynamic value;
 
   @override
   void initState() {
     final ref = referenceDatabase.reference();
     ref.child("qrcode").onValue.listen((event) {
       setState(() {
-        value = event.snapshot.value;
+        value = event.snapshot.value['qrcode'];
+        // print(">>>>>>>>>> ${event.snapshot.value['qrcode'].toString()}");
       });
     });
     super.initState();
@@ -43,7 +43,9 @@ class _WebATMPageState extends State<WebATMPage> {
               return Text(snapshot.error.toString());
             } else {
               return Center(
-                child: value == 0 ? Image.asset("assets/") : Text("SIA"),
+                child: value == 0
+                    ? Image.asset("assets/atm7.png")
+                    : Image.asset("assets/atm2.png"),
               );
             }
           }),

@@ -26,7 +26,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   const Text(
                     "Account",
                     style: TextStyle(
-                        color: Color(0xFF4D70A6),
+                        color: Color(0xffa20d5f),
                         fontSize: 26,
                         fontWeight: FontWeight.bold),
                   ),
@@ -34,7 +34,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   const Text(
                     "No.  12987412876",
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Color(0xffc2d0db),
                         fontSize: 22,
                         fontWeight: FontWeight.bold),
                   ),
@@ -42,9 +42,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: const [
                       Text(
-                        "55\$",
+                        "155\$",
                         style: TextStyle(
-                            color: Colors.black,
+                            color: Color(0xffa20d5f),
                             fontSize: 30,
                             fontWeight: FontWeight.bold),
                       ),

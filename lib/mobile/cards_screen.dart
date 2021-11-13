@@ -27,7 +27,7 @@ class _CardsScreenState extends State<CardsScreen> {
                   const Text(
                     "Cards",
                     style: TextStyle(
-                        color: Color(0xFF4D70A6),
+                        color: Color(0xffa20d5f),
                         fontSize: 26,
                         fontWeight: FontWeight.bold),
                   ),
@@ -38,13 +38,13 @@ class _CardsScreenState extends State<CardsScreen> {
                       const Text(
                         "Ali Qadomy",
                         style: TextStyle(
-                            color: Colors.black,
+                            color: Color(0xffa20d5f),
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
                       Container(
-                        child:
-                            const Icon(FontAwesomeIcons.userCircle, size: 30),
+                        child: const Icon(FontAwesomeIcons.userCircle,
+                            size: 30, color: Color(0xffa20d5f)),
                       ),
                     ],
                   ),
@@ -56,10 +56,10 @@ class _CardsScreenState extends State<CardsScreen> {
                         fontSize: 26,
                         fontWeight: FontWeight.bold),
                   ),
-                  listTile("Saving Account", "55.00 \$",
+                  listTile("Saving Account", "155.123 \$",
                       FontAwesomeIcons.creditCard),
-                  listTile(
-                      "Saving Account", "124.8 ₪", FontAwesomeIcons.creditCard),
+                  listTile("Saving Account", "124.80 ₪",
+                      FontAwesomeIcons.creditCard),
                   SizedBox(height: 40),
                   listTile("Points", "600", FontAwesomeIcons.gift),
                 ],
@@ -109,7 +109,7 @@ class _CardsScreenState extends State<CardsScreen> {
                   ),
                   Row(
                     children: [
-                      Icon(icon, size: 26),
+                      Icon(icon, size: 26, color: Color(0xffc2d0db)),
                       const SizedBox(width: 12),
                       Text(
                         cost,
